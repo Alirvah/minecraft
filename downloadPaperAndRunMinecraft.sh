@@ -9,4 +9,4 @@ appname=$(curl -s https://papermc.io/api/v2/projects/paper/versions/$version/bui
 downloadLink=$(echo "https://papermc.io/api/v2/projects/paper/versions/$version/builds/$build/downloads/$appname")
 wget $downloadLink -O $appname
 
-java -Xms2G -Xmx4G -jar $appname
+java -Xms4G -Xmx6G -jar $appname
